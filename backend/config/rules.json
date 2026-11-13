@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "code": "RULE-01",
+      "name": "Overall event budget allocation",
+      "enabled": true,
+      "action": "BLOCK",
+      "description": "Category allocations must not exceed the approved event budget."
+    },
+    {
+      "code": "RULE-02",
+      "name": "Category budget spending",
+      "enabled": true,
+      "action": "WARN",
+      "description": "Warn when category spending exceeds its allocation."
+    },
+    {
+      "code": "RULE-03",
+      "name": "Positive transaction amount",
+      "enabled": true,
+      "action": "BLOCK",
+      "description": "Amount must be a finite number greater than zero."
+    },
+    {
+      "code": "RULE-04",
+      "name": "Required transaction fields",
+      "enabled": true,
+      "action": "BLOCK",
+      "description": "Required transaction fields must be present."
+    },
+    {
+      "code": "RULE-05",
+      "name": "Correction traceability",
+      "enabled": true,
+      "action": "BLOCK",
+      "description": "Corrections need an original transaction ID and reason."
+    },
+    {
+      "code": "RULE-06",
+      "name": "Possible duplicate transaction",
+      "enabled": true,
+      "action": "WARN",
+      "description": "Possible duplicates require review; do not auto-delete."
+    }
+  ]
+}
